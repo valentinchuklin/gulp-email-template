@@ -59,7 +59,7 @@ const imgfunction = function () {
 const GulpClean = require('gulp-clean')
 
 const cleanfunction = function () {
-  return gulp.src('./src/style.css')
+  return gulp.src('./src/style.css', {read: false})
   .pipe(GulpClean())
 }
 //Sass and pug functions
